@@ -24,11 +24,17 @@ public class DivisibleActivity extends AppCompatActivity {
         binding.checkBtn.setOnClickListener(v -> {
             String num = binding.divisibleTxt.getText().toString();
             int number = Integer.valueOf(num);
-            if (number % 5 == 0) {
-                Toast.makeText(this, "true", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(this, String.valueOf(number), Toast.LENGTH_SHORT).show();
-            }
+            boolean result = divisibleByFive(number);
+            Toast.makeText(this, String.valueOf(result), Toast.LENGTH_SHORT).show();
         });
+    }
+
+    public static boolean divisibleByFive(int num) {
+        boolean result = false;
+        if (num % 5 == 0) {
+            result = true;
+        }
+        System.out.println(result);
+        return result;
     }
 }
