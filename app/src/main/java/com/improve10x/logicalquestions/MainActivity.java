@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         isFindFizzBuzz();
         isDivisible();
         nThEvenNumber();
+        findDiscount();
 
     }
 
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
     private void nThEvenNumber() {
         binding.nthEvenBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, NthEvenNumberActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findDiscount() {
+        binding.discBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DiscountActivity.class);
             startActivity(intent);
         });
     }
