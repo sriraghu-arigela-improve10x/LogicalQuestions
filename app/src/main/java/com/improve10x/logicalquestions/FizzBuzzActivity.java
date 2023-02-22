@@ -23,15 +23,24 @@ public class FizzBuzzActivity extends AppCompatActivity {
         binding.checkBtn.setOnClickListener(v -> {
             String num = binding.numberTxt.getText().toString();
             int number = Integer.valueOf(num);
-            if ( number % 3 == 0 &&  number % 5 == 0) {
-                Toast.makeText(this, "FizzBuzz", Toast.LENGTH_SHORT).show();
-            } else if (number % 3 == 0) {
-                Toast.makeText(this, "Fizz", Toast.LENGTH_SHORT).show();
-            } else if (number % 5 == 0) {
-                Toast.makeText(this, "Buzz", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(this, String.valueOf(number), Toast.LENGTH_SHORT).show();
-            }
+            String result = fizzBuzz(number);
+            Toast.makeText(this, String.valueOf(result), Toast.LENGTH_SHORT).show();
         });
     }
+
+    public static String fizzBuzz(int n) {
+        String result = "";
+        if (n % 3 == 0 && n % 5 == 0) {
+            result = "FizzBuzz";
+        } else if (n % 3 == 0) {
+            result = "Fizz";
+        } else if (n % 5 == 0) {
+            result = "Buzz";
+        } else {
+            result = Integer.toString(n);
+        }
+        System.out.println(result);
+        return result;
+    }
+
 }

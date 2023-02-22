@@ -27,13 +27,19 @@ public class FarmActivity extends AppCompatActivity {
             int chickensLeg = Integer.parseInt(chickenLegs);
             int cowsLeg = Integer.parseInt(cowLegs);
             int pigsLeg = Integer.parseInt(pigLegs);
-            int chickenLeg = chickensLeg * 2;
-            int cowLeg = cowsLeg * 4;
-            int pigLeg = pigsLeg * 4;
-            int totalLegs = chickenLeg + cowLeg + pigLeg;
-            String legs = String.valueOf(totalLegs);
+            int result = findAnimals(chickensLeg,cowsLeg,pigsLeg);
+            String legs = String.valueOf(result);
             binding.totalLegs.setText(legs);
-
         });
+    }
+
+    public static int findAnimals(int chickens, int cows, int pigs) {
+        int chickenLegs = chickens * 2;
+        int cowLegs = cows * 4;
+        int pigLegs = pigs * 4;
+        int totalLegs;
+        totalLegs = chickenLegs + cowLegs + pigLegs;
+        System.out.println(totalLegs);
+        return totalLegs;
     }
 }
