@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         isDivisible();
         nThEvenNumber();
         findDiscount();
+        findIntegerRange();
 
     }
 
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
     private void findDiscount() {
         binding.discBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, DiscountActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findIntegerRange() {
+        binding.intBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, IntegerRangeActivity.class);
             startActivity(intent);
         });
     }
