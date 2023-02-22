@@ -36,6 +36,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="FiizzBuzz"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/divisible_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Divisible"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

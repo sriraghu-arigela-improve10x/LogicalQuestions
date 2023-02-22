@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         findTheLegs();
         isFindFizzBuzz();
+        isDivisible();
+
     }
 
     private void findTheLegs() {
@@ -30,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private void isFindFizzBuzz() {
         binding.fizzBuzzBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, FizzBuzzActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void isDivisible() {
+        binding.divisibleBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DivisibleActivity.class);
             startActivity(intent);
         });
     }
