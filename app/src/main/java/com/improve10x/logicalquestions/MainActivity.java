@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         findTheLegs();
         isFindFizzBuzz();
         isDivisible();
+        nThEvenNumber();
 
     }
 
@@ -39,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
     private void isDivisible() {
         binding.divisibleBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, DivisibleActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void nThEvenNumber() {
+        binding.nthEvenBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, NthEvenNumberActivity.class);
             startActivity(intent);
         });
     }

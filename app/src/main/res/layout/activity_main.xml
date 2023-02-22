@@ -44,6 +44,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="Divisible"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/nth_even_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Even Number"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
