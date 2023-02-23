@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         findThreeProgrammers();
         findFourProgrammers();
         isFindTheBomb();
+        findTwoMakesTen();
     }
 
     private void findTheLegs() {
@@ -102,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
     private void isFindTheBomb() {
         binding.bombBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, FindTheBombActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findTwoMakesTen() {
+        binding.twoMakesBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TwoMakesTenActivity.class);
             startActivity(intent);
         });
     }
