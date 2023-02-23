@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         nThEvenNumber();
         findDiscount();
         findIntegerRange();
+        findLessThenHundred();
 
     }
 
@@ -63,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
     private void findIntegerRange() {
         binding.intBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, IntegerRangeActivity.class);
+            startActivity(intent);
+        });
+    }
+    private void findLessThenHundred() {
+        binding.lessthenBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LessThenHundredActivity.class);
             startActivity(intent);
         });
     }
