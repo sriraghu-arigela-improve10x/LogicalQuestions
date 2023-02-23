@@ -67,9 +67,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
     private void findLessThenHundred() {
         binding.lessthenBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, LessThenHundredActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findEqualityOfThreeValues() {
+        binding.equalityBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, EqualityOfThreeValuesActivity.class);
             startActivity(intent);
         });
     }
