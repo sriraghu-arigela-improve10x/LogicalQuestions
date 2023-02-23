@@ -99,6 +99,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="4 Progammers"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bomb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="FInd Bomb"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

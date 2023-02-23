@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         findEqualityOfThreeValues();
         findThreeProgrammers();
         findFourProgrammers();
+        isFindTheBomb();
     }
 
     private void findTheLegs() {
@@ -94,6 +95,13 @@ public class MainActivity extends AppCompatActivity {
     private void findFourProgrammers() {
         binding.fourPgrmsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, FourProgrammersActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void isFindTheBomb() {
+        binding.bombBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindTheBombActivity.class);
             startActivity(intent);
         });
     }
