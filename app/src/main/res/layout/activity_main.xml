@@ -84,6 +84,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="Equality of Three Values"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/three_pgrms_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="3 Progammers"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
