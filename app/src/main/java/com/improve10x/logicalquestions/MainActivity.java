@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         findLessThenHundred();
         findEqualityOfThreeValues();
         findThreeProgrammers();
+        findFourProgrammers();
     }
 
     private void findTheLegs() {
@@ -88,5 +89,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ThreeProgrammersActivity.class);
         startActivity(intent);
     });
+    }
+
+    private void findFourProgrammers() {
+        binding.fourPgrmsBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FourProgrammersActivity.class);
+            startActivity(intent);
+        });
     }
 }
