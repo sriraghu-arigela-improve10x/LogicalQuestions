@@ -15,11 +15,16 @@ public class FindTheBombActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFindTheBombBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("Find The Bomb");
         isFindTheBomb();
     }
 
     private void isFindTheBomb() {
-
+        binding.findBtn.setOnClickListener(v -> {
+            String input = binding.inputTxt.getText().toString();
+            String result = findTheBomb(input);
+            binding.resultTxt.setText(result);
+        });
     }
 
     public static String findTheBomb(String text) {
