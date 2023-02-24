@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         findConvertMinutesInToSeconds();
         findConvertHoursAndMinutesInToSeconds();
         convertAgeToDays();
+        findTheLeapYear();
+    }
+
+    private void findTheLeapYear() {
     }
 
     private void findTheLegs() {
