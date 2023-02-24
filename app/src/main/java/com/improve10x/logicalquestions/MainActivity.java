@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findTheLeapYear() {
+        binding.leapYearBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, LeapYearActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void findTheLegs() {
