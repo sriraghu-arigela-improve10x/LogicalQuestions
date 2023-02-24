@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         findTwoMakesTen();
         findConvertMinutesInToSeconds();
         findConvertHoursAndMinutesInToSeconds();
+        convertAgeToDays();
     }
 
     private void findTheLegs() {
@@ -126,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
     private void findConvertHoursAndMinutesInToSeconds() {
         binding.convertSecondsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, HoursAndMinutesIntoSecondActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void convertAgeToDays() {
+        binding.ageToDaysBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AgeToDaysActivity.class);
             startActivity(intent);
         });
     }

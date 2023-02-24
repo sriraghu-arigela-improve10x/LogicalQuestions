@@ -131,6 +131,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="HrsAndMinsInToSeconds"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/age_to_days_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Age to Days"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
