@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         findFourProgrammers();
         isFindTheBomb();
         findTwoMakesTen();
+        findConvertMinutesInToSeconds();
     }
 
     private void findTheLegs() {
@@ -110,6 +111,13 @@ public class MainActivity extends AppCompatActivity {
     private void findTwoMakesTen() {
         binding.twoMakesBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, TwoMakesTenActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findConvertMinutesInToSeconds() {
+        binding.convertBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MinutesInToSecondsActivity.class);
             startActivity(intent);
         });
     }

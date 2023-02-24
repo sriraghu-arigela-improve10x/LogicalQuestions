@@ -115,6 +115,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="Two Makes Ten"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/convert_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="MinsInToSeconds"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
